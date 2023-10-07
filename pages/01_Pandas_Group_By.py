@@ -10,6 +10,11 @@ st.markdown(
     But I just want to show my favorite way to do it. I think it is very intuitive and
     easy to understand. I hope you like it. """)
 
+st.markdown(f'## Required Packages')
+st.code(f"""
+        import pandas as pd
+        from pydataset import data""", language='python')
+
 st.markdown(f'## Load and show the iris dataset as an example')
 load_data_command = f"""iris = data('iris')"""
 st.code(load_data_command, language='python')
